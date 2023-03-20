@@ -1,0 +1,48 @@
+.flash-message {
+    position: absolute;
+    top: unset;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    z-index: 999;
+
+    @include desktop {
+        width: auto;
+        top: 100px;
+        right: 20px;
+    }
+
+    span {
+        color: white;
+        font-weight: bold;
+        padding: 15px 20px;
+        width: 100%;
+        text-align: center;
+
+        @include desktop {
+            width: auto;
+            text-align: unset;
+        }
+    }
+
+    &--error,
+    &--success,
+    &--info {
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+    }
+
+    &--error {
+        background-color: red;
+    }
+
+    &--success {
+        background-color: #63aa28;
+    }
+
+    &--info {
+        background-color: #3f89de;
+    }
+}
