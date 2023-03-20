@@ -1,0 +1,30 @@
+.answer {
+    cursor: pointer;
+    color: $white;
+    font-size: $fs-header;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 0.25rem;
+    background-color: $grey;
+
+    &:hover:not(&[disabled]) {
+        background-color: $secondary-base-color;
+    }
+
+    &--selected {
+        outline: 3px solid $secondary-base-color;
+    }
+
+    &--error {
+        outline: 3px solid $red;
+    }
+
+    &--success {
+        outline: 3px solid $green;
+    }
+
+
+    &[disabled] {
+        cursor: not-allowed;
+    }
+}

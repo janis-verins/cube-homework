@@ -1,0 +1,35 @@
+.question {
+    &__answers {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__results {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-message {
+            margin-bottom: 20px;
+        }
+
+        &-title {
+            font-size: $fs-header-big;
+            font-weight: bold;
+            color: $green;
+            margin-bottom: 10px;
+
+            &--error {
+                color: $red;
+            }
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+}

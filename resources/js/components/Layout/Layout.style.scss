@@ -1,0 +1,23 @@
+.layout {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+
+    &__wrapper {
+        background-color: $white;
+        box-shadow: 5px 5px 5px;
+        max-width: 95vw;
+        min-width: 50vw;
+        padding: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo {
+        cursor: pointer;
+    }
+}
