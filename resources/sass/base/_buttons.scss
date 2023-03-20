@@ -1,0 +1,5 @@
+.button {
+    &__main {
+        @include button-main;
+    }
+}
